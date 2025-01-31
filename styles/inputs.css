@@ -31,3 +31,22 @@ input:invalid{
   border: 1px solid var(--danger);
 }
 
+.droparea{
+  position: relative;
+  display: flex;
+  color: var(--input-placeholder);
+  font: var(--body-md);
+  gap: .75rem;
+  align-items: center;
+
+  input{
+    all: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    inset: 0;
+    pointer-events: none;
+  }
+
+}
