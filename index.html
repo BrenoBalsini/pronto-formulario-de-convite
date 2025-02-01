@@ -21,6 +21,7 @@
 
 </head>
 <body>
+<div id="app">
   <aside>
     <img src="assets/Logo.svg" alt="">
     <h1>Festivite</h1>
@@ -31,6 +32,7 @@
     <h1>Crie seu convite</h1>
 
     <div id="forms">
+
       <div id="about">
         <div class="section">
           <img src="assets/calendar.svg" alt="">
@@ -53,7 +55,12 @@
               <input type="date" name="final-date" id="final-date">
             </div>
         </div>
-              <div class="radio-wrapper">
+
+        <div class="label">
+          <label for="tipo">Tipo</label>
+        </div>
+
+        <div class="radio-wrapper">
                 <div class="radio-type">
                   <input type="radio" id="in-person" name="tipo" value="in-person" checked/>
                   <button class="button-secondary">
@@ -76,17 +83,97 @@
                   <button class="button-secondary">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66671 4.5C2.20647 4.5 1.83337 4.8731 1.83337 5.33333V10.6667C1.83337 11.1269 2.20647 11.5 2.66671 11.5H9.33337C9.79361 11.5 10.1667 11.1269 10.1667 10.6667V8.6735C10.1666 8.66864 10.1666 8.66378 10.1667 8.65892V7.00949C10.1666 7.00347 10.1666 6.99746 10.1667 6.99145V5.33333C10.1667 4.8731 9.79361 4.5 9.33337 4.5H2.66671ZM11.1667 6.12939V5.33333C11.1667 4.32081 10.3459 3.5 9.33337 3.5H2.66671C1.65419 3.5 0.833374 4.32081 0.833374 5.33333V10.6667C0.833374 11.6792 1.65419 12.5 2.66671 12.5H9.33337C10.3459 12.5 11.1667 11.6792 11.1667 10.6667V9.60093L13.8717 11.4043C13.9972 11.4878 14.143 11.5357 14.2936 11.5429C14.4441 11.5501 14.5938 11.5163 14.7267 11.4452C14.8596 11.374 14.9707 11.2682 15.0482 11.1389C15.1257 11.0096 15.1666 10.8617 15.1667 10.7109V5.24681C15.1667 5.24677 15.1667 5.24686 15.1667 5.24681C15.1667 5.10024 15.1281 4.9561 15.0547 4.82923C14.9812 4.70231 14.8756 4.59702 14.7485 4.52398C14.6213 4.45094 14.4772 4.41274 14.3305 4.41324C14.1839 4.41374 14.04 4.45291 13.9134 4.52681L11.1667 6.12939ZM11.1667 7.28715V8.39908L14.1667 10.3991V5.53677L11.1667 7.28715Z" fill="#59B2FF"/>
-                      </svg>
+                    </svg>
                     <p>Online</p>
                 </button>
                 </div>
-            </div>  
+        </div>  
         
-      </div>
+        <div class="input-wrapper">
+          <label for="local">Local</label>
+          <input type="text" name="local" id="local" placeholder="Link ou endereço">
+        </div>
 
+        <div class="input-wrapper">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description">Escreva sobre os detalhes do evento</textarea>
+
+        </div>
+      </div> 
+      
+      <div class="customization">
+        <div class="section">
+          <img src="assets/paintbrush-vertical.svg.svg" alt="">
+          <h3>Personalização</h3>
+        </div>
+        <div class="label">
+          <label for="color">Cor principal</label>
+        </div>
+
+        <div class="radio-color-wrapper">
+
+          <div class="radio-color">
+            <input type="radio" id="brand-light" name="color" value="brand-light" checked/>
+            <span class="brand-light"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="navy" name="color" value="navy"/>
+            <span class="navy"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="purple" name="color" value="purple"/>
+            <span class="purple"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="fuschia" name="color" value="fuschia"/>
+            <span class="fuschia"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="pink" name="color" value="pink"/>
+            <span class="pink"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="danger" name="color" value="danger"/>
+            <span class="danger"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="orange" name="color" value="orange"/>
+            <span class="orange"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="yellow" name="color" value="yellow"/>
+            <span class="yellow"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="lime" name="color" value="lime"/>
+            <span class="lime"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="green" name="color" value="green"/>
+            <span class="green"></span>
+          </div>
+
+          <div class="radio-color">
+            <input type="radio" id="cyan" name="color" value="cyan"/>
+            <span class="cyan"></span>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
   </main>
+</div>
 </body>
 </html>

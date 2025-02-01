@@ -25,6 +25,7 @@
 
   textarea{
     padding: 1rem;
+    height: 8.5rem;
   }
   
 }
@@ -142,3 +143,52 @@ input:invalid{
     height: 100%;
   }
 }
+
+.radio-color{
+    box-sizing: border-box;
+    position: relative;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background: var(--shape-button);
+
+    border-radius: 999rem;
+        
+    span{
+      position: absolute;
+      width: 1.75rem;
+      height: 1.75rem;
+      left: calc(50% - 1.75rem/2);
+      top: calc(50% - 1.75rem/2);
+      border-radius: 999px;
+      /* background: var(--shape-backgroud); */
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    input{
+      position: absolute;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    &:has(input:checked){
+      border: 2px solid var(--brand-light);
+      background-color: var(--shape-button);
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+}
+
+.radio-color-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+}
+
