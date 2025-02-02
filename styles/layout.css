@@ -1,3 +1,7 @@
+body{
+  background-color: var(--shape-backgroud);
+}
+
 #app{
   display: grid;
   max-width: 1280px;
@@ -5,7 +9,7 @@
   height: 100vh;
   grid-template-columns: 400px auto;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   background-color: var(--shape-backgroud);
   overflow: hidden;
 }
@@ -31,10 +35,59 @@ aside{
   }
 
 }
+main::-webkit-scrollbar {
+  width: 0;
+}
 
 main{
+  display: grid;
   overflow-y: auto;
   background-color: var(--shape-body);
   border-radius: .75rem;
   padding: 5rem;
+  gap: 2.5rem;
+  justify-items: center;
+  
+
+
+  h1{
+    font: var(--heading-md);
+    color: var(--text-color-heading);
+    width: 35rem;
+  }
+}
+
+#about{
+  display: grid;
+  gap: 1rem;
+}
+
+#forms{
+  display: grid;
+  margin-inline: auto;
+  max-width: 35rem;
+  gap: 3rem;
+}
+
+.section{
+  display: flex;
+  gap: .75rem;
+
+  font: 800 1rem "Baloo 2", serif;
+  color: var(--text-color-heading);
+
+  align-items: center;
+
+  margin-bottom: .5rem;
+}
+
+
+.customization{
+  display: grid;
+  gap: 1rem;
+}
+
+.contact{
+  display: grid;
+  gap: 1rem;
 }

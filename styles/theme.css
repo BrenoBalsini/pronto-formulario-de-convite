@@ -17,9 +17,10 @@
   position: relative;
   justify-items: center;
   border: 2px solid transparent;
+  margin-bottom: .75rem;
 
   label{
-    font: var(--body-sm);
+    font: 400 0.875rem "Open Sans", serif;
     color: var(--text-color-heading);
   }
 

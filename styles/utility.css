@@ -41,3 +41,35 @@
 .danger{
   background-color: var(--danger);
 }
+
+.text-color-heading{
+  color: var(--text-color-heading);
+}
+.baloo-2-md{
+  font: var(--heading-md)
+}
+
+
+.col2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.col2-hug{
+  display: grid;
+  grid-template-columns: 11rem auto;
+}
+
+.label{
+  font: 400 0.875rem "Open Sans", serif;
+  color: var(--text-color-heading);
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.brand-light-color{
+  color: var(--brand-light);
+}

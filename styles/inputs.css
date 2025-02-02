@@ -1,10 +1,17 @@
-
+input[type=date]{
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
 
 .input-wrapper{
   display: grid;
   gap: 0.75rem;
-  font: var(--body-sm);
-  color: var(--text-color-body);
+
+  label{
+    font: 400 0.875rem "Open Sans", serif;
+    color: var(--text-color-body);
+  }
 
   input, textarea{
     all: unset;
@@ -25,7 +32,7 @@
 
   textarea{
     padding: 1rem;
-    height: 8.5rem;
+    height: 7rem;
   }
   
 }
@@ -60,6 +67,34 @@ input:invalid{
     p{
       opacity: 0;
     }
+  }
+}
+
+.style{
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+
+  p{
+    font: var(--body-sm);
+    color: var(--text-color-heading);
+    transition: color 300ms ease;
+  }
+
+
+  .claro{
+    display: none;
+    color: transparent;
+  }
+
+  &:has(.switch input:checked) .escuro {
+    color: transparent;
+    display: none;
+  }
+
+  &:has(.switch input:checked) .claro {
+    display: flex;
+    color: var(--text-color-heading);
   }
 }
 
@@ -105,12 +140,21 @@ input:invalid{
 }
 
 .radio-wrapper{
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.25rem;
+  padding: .25rem;
   width: 100%;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+
+
   button{
+    height: 2.5rem;
     width: 100%;
+    justify-content: center;
   }
 }
 
